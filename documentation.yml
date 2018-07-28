@@ -1,0 +1,16 @@
+toc:
+  - name: Array
+    children:
+      - shuffle
+      - unique
+  - name: Responsive
+    children: 
+      - documentWidth
+  - name: Selectors
+    children:
+      - querySelectorAllAsArray
+  - name: String
+    children:
+      - kebakCaseToPascalCase
+      - numberFromString
+      - pascalToKebabCase

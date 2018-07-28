@@ -1,0 +1,11 @@
+# OS related
+.DS_Store
+
+# Nodejs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Stuff
+.todo

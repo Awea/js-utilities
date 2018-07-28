@@ -1,0 +1,18 @@
+{
+  "name": "@awea/utilities",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "description": "A small collection of various functions that I reuse between web projects",
+  "homepage": "https://github.com/Awea/utilities",
+  "author": "Awea <aweaoftheworld@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": "Awea/utilities",
+  "bugs": {
+    "url": "https://github.com/Awea/utilities/issues"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "documentation": "^8.0.2"
+  }
+}
