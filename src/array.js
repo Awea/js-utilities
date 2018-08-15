@@ -1,7 +1,8 @@
 /**
- * Shuffles array in place. [Source](https://stackoverflow.com/a/6274381/616095).
+ * Shuffle array in place.
+ * Source: https://stackoverflow.com/a/6274381/616095
  * @param {array} a
- * @returns {array}.
+ * @returns {array} Shuffled
  */
 export function shuffle(a) {
     var j, x, i;
@@ -17,6 +18,8 @@ export function shuffle(a) {
 /**
  * Filter array by unique values.
  * Source: https://stackoverflow.com/a/14438954/616095
+ * @param {array} a
+ * @returns {array} Without duplicates
  */
 export function unique(a){
   return a.filter((v, i, a) => a.indexOf(v) === i);

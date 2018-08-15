@@ -11,6 +11,6 @@ toc:
       - querySelectorAllAsArray
   - name: String
     children:
-      - kebakCaseToPascalCase
+      - kebabCaseToPascalCase
       - numberFromString
-      - pascalToKebabCase
+      - pascalCaseToKebabCase

@@ -1,18 +1,18 @@
 /**
  * kebab-case to PascalCase.
  * @param {string} string
- * @returns {string}.
+ * @returns {string} PascalCase
  */
-export function kebakCaseToPascalCase(string){
+export function kebabCaseToPascalCase(string){
   return string.split('-').map((word) => {
     return word.charAt(0).toUpperCase() + word.slice(1)
   }).join('')
 }
 
 /**
- * Return the first number included in a String.
+ * Return the number included in a string.
  * @param {string} string
- * @returns {string}.
+ * @returns {number} Given string as a number
  */
 export function numberFromString(string){
   let number = string.match(/\d/)
@@ -23,8 +23,8 @@ export function numberFromString(string){
 /**
  * PascalCase to kebab-case.
  * @param {string} string
- * @returns {string}.
+ * @returns {string} kebab-case
  */
-export function pascalToKebabCase(string){
+export function pascalCaseToKebabCase(string){
   return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 }

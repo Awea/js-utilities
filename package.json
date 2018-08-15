@@ -1,15 +1,15 @@
 {
-  "name": "@awea/utilities",
+  "name": "@awea/js-utilities",
   "version": "1.0.0",
   "private": false,
-  "main": "index.js",
-  "description": "A small collection of various functions that I reuse between web projects",
-  "homepage": "https://github.com/Awea/utilities",
+  "main": "src/index.js",
+  "description": "A collection of useful JavaScript functions.",
+  "homepage": "https://github.com/Awea/js-utilities",
   "author": "Awea <aweaoftheworld@gmail.com>",
   "license": "GPL-3.0",
-  "repository": "Awea/utilities",
+  "repository": "Awea/js-utilities",
   "bugs": {
-    "url": "https://github.com/Awea/utilities/issues"
+    "url": "https://github.com/Awea/js-utilities/issues"
   },
   "keywords": [],
   "devDependencies": {

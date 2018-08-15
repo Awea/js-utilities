@@ -1,6 +1,6 @@
 /**
  * Get the viewport width.
- * @returns {number}.
+ * @returns {number} Viewport width
  */
 export function documentWidth(){
   return Math.max(
