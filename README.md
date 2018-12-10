@@ -12,7 +12,7 @@ A collection of useful JavaScript functions.
 ## Usage example
 
 ```js
-import { kebabCaseToPascalCase } from 'js-utilities'
+import { kebabCaseToPascalCase } from '@awea/js-utilities/string'
 
 kebabCaseToPascalCase('kebab-string')
 // => KebabString
