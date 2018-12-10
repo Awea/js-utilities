@@ -3,28 +3,31 @@
  * @param {string} string
  * @returns {string} PascalCase
  */
-export function kebabCaseToPascalCase(string){
-  return string.split('-').map((word) => {
+function kebabCaseToPascalCase(string){
+  return string.split('-').map(function(word){
     return word.charAt(0).toUpperCase() + word.slice(1)
   }).join('')
 }
+module.exports.kebabCaseToPascalCase = kebabCaseToPascalCase
 
 /**
  * Return the number included in a string.
  * @param {string} string
  * @returns {number} Given string as a number
  */
-export function numberFromString(string){
+function numberFromString(string){
   let number = string.match(/\d/)
 
   return number !== null ? parseInt(number[0]) : 0
 }
+module.exports.numberFromString = numberFromString
 
 /**
  * PascalCase to kebab-case.
  * @param {string} string
  * @returns {string} kebab-case
  */
-export function pascalCaseToKebabCase(string){
+function pascalCaseToKebabCase(string){
   return string.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
 }
+module.exports.pascalCaseToKebabCase = pascalCaseToKebabCase

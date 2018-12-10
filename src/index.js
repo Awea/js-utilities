@@ -1,4 +1,6 @@
-export {unique, shuffle} from './array'
-export {documentWidth} from './responsive'
-export {querySelectorAllAsArray} from './selectors'
-export {kebabCaseToPascalCase, numberFromString, pascalCaseToKebabCase} from './string'
+module.exports = {
+  array: require('./array'),
+  responsive: require('./responsive'),
+  selectors: require('./selectors'),
+  string: require('./string')
+}

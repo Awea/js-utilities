@@ -4,7 +4,7 @@
  * @param {array} a
  * @returns {array} Shuffled
  */
-export function shuffle(a) {
+function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
         j = Math.floor(Math.random() * (i + 1));
@@ -14,6 +14,7 @@ export function shuffle(a) {
     }
     return a;
 }
+module.exports.shuffle = shuffle
 
 /**
  * Filter array by unique values.
@@ -21,6 +22,9 @@ export function shuffle(a) {
  * @param {array} a
  * @returns {array} Without duplicates
  */
-export function unique(a){
-  return a.filter((v, i, a) => a.indexOf(v) === i);
+function unique(a){
+  return a.filter(function(v, i, a){
+    return a.indexOf(v) === i
+  });
 }
+module.exports.unique = unique
