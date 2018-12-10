@@ -2,7 +2,7 @@
  * Get the viewport width.
  * @returns {number} Viewport width
  */
-export function documentWidth(){
+function documentWidth(){
   return Math.max(
     document.body.scrollWidth,
     document.documentElement.scrollWidth,
@@ -11,3 +11,4 @@ export function documentWidth(){
     document.documentElement.clientWidth
   )
 }
+module.exports.documentWidth = documentWidth

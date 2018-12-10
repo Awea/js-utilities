@@ -4,6 +4,7 @@
  * @param {string} selector used by `querySelectorAll`
  * @returns {array} Of elements
  */
-export function querySelectorAllAsArray($container, selector){
+function querySelectorAllAsArray($container, selector){
   return Array.from($container.querySelectorAll(selector))
 }
+module.exports.querySelectorAllAsArray = querySelectorAllAsArray
