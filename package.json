@@ -13,6 +13,7 @@
   },
   "keywords": [],
   "devDependencies": {
-    "documentation": "^8.0.2"
+    "documentation": "^8.0.2",
+    "prettier": "^1.18.2"
   }
 }

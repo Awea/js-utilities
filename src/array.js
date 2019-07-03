@@ -14,7 +14,7 @@ function shuffle(a) {
     }
     return a;
 }
-module.exports.shuffle = shuffle
+module.exports.shuffle = shuffle;
 
 /**
  * Filter array by unique values.
@@ -22,9 +22,9 @@ module.exports.shuffle = shuffle
  * @param {array} a
  * @returns {array} Without duplicates
  */
-function unique(a){
-  return a.filter(function(v, i, a){
-    return a.indexOf(v) === i
-  });
+function unique(a) {
+    return a.filter(function(v, i, a) {
+        return a.indexOf(v) === i;
+    });
 }
-module.exports.unique = unique
+module.exports.unique = unique;
