@@ -19,7 +19,7 @@ module.exports.kebabCaseToPascalCase = kebabCaseToPascalCase;
  * @returns {number} Given string as a number
  */
 function numberFromString(string) {
-  let number = string.match(/\d/);
+  var number = string.match(/\d/);
 
   return number !== null ? parseInt(number[0]) : 0;
 }
