@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := help
+
 DOC := $(PWD)/node_modules/.bin/documentation
 
 .PHONY: deps
@@ -9,11 +11,11 @@ node_modules: package.json yarn.lock
 
 .PHONY: doc
 doc: 
-	$(DOC) build src/index.js -f html -o docs 
+	@$(DOC) build src/index.js -f html -o docs 
 
 .PHONY: doc_watch
 doc_watch:
-	$(DOC) build src/index.js -f html -o docs -w --config documentation.yml
+	@$(DOC) build src/index.js -f html -o docs -w
 
 src/package.json: package.json
 	@cp -rf package.json src
@@ -25,7 +27,6 @@ src/README.md: README.md
 publish: src/package.json src/README.md
 	@cd src; npm publish
 
-.DEFAULT_GOAL := help
 .PHONY: help
 help: ## Print this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
