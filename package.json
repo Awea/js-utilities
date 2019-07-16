@@ -1,6 +1,6 @@
 {
   "name": "@awea/js-utilities",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "private": false,
   "main": "index.js",
   "description": "A collection of useful JavaScript functions.",
