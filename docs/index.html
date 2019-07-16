@@ -46,6 +46,26 @@
               
                 
                 <li><a
+                  href='#boundingrectsareoverlapping'
+                  class="">
+                  boundingRectsAreOverlapping
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#pointerinboundingrect'
+                  class="">
+                  pointerInBoundingRect
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#documentwidth'
                   class="">
                   documentWidth
@@ -223,6 +243,166 @@ Source: <a href="https://stackoverflow.com/a/14438954/616095">https://stackoverf
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
         Without duplicates
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='boundingrectsareoverlapping'>
+      boundingRectsAreOverlapping
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Return a boolean value that indicates the overlapping status between two DOMRect.</p>
+
+    <div class='pre p1 fill-light mt0'>boundingRectsAreOverlapping(boundingRectA: DOMRect, boundingRectB: DOMRect): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>boundingRectA</span> <code class='quiet'>(DOMRect)</code>
+	    given by 
+<a href="https://developer.mozilla.org/fr/docs/Web/API/Element/getBoundingClientRect">getBoundingClientRect</a>
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>boundingRectB</span> <code class='quiet'>(DOMRect)</code>
+	    given by 
+<a href="https://developer.mozilla.org/fr/docs/Web/API/Element/getBoundingClientRect">getBoundingClientRect</a>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        Overlapping status
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='pointerinboundingrect'>
+      pointerInBoundingRect
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Return a boolean value that indicates whether the pointer is in the given bounding rectangle.</p>
+
+    <div class='pre p1 fill-light mt0'>pointerInBoundingRect(pointer: <a href="https://developer.mozilla.org/docs/Web/API/MouseEvent">MouseEvent</a>, boundingRect: DOMRect): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>pointer</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/API/MouseEvent">MouseEvent</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>boundingRect</span> <code class='quiet'>(DOMRect)</code>
+	    given by 
+<a href="https://developer.mozilla.org/fr/docs/Web/API/Element/getBoundingClientRect">getBoundingClientRect</a>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>:
+        Pointer is in the given bounding rectangle
 
       
     
